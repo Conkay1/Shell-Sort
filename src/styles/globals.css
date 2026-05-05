@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #FAF7F2;
+  --surface: #FFFFFF;
+  --outline: #2A2D4A;
+  --text: #2A2D4A;
+  --text-muted: #888888;
+  --border: #E0DDD8;
+  --hold-bg: #EEEAE4;
+  --shelf-bg: #F0EDE8;
+
+  --common: #78B494;
+  --uncommon: #5B9BD5;
+  --rare: #A67BC3;
+  --very-rare: #D4845A;
+  --legendary: #E8C137;
+  --danger: #E05050;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: inherit;
+}
